@@ -1,0 +1,11 @@
+let a, b, c;
+a = 5;
+b = 1;
+c = 4;
+
+// DECLARAÇÕES SÃO FINALIZADAS COM PONTO E VIRGULA NO FINAL
+
+// POR EXEMPLO: 
+// let a, b, c; a = 5; b = 1; c = 4;
+// DESSA MANEIRA TMB SERIA CORRETO, POIS O ; ESTÁ NO FINAL
+// FINALIZANDO A DECLARAÇÃO
