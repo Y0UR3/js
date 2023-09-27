@@ -2,9 +2,11 @@
 function soma(valor1, valor2){
     return valor1 + valor2;
 }
-document.getElementById('texto') = soma(15, 15);
+document.getElementById("texto").innerHTML = soma(15, 15);
 
-
+function alertaOla(){
+    alert("para de clicar em mim!");
+}
 
 
 
