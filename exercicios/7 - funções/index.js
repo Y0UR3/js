@@ -1,5 +1,14 @@
-/*
 
+function soma(valor1, valor2){
+    return valor1 + valor2;
+}
+document.getElementById('texto') = soma(15, 15);
+
+
+
+
+
+/*
 O que é uma função?
 
     Uma função em JavaScript é como uma receita em um livro de culinária. 
