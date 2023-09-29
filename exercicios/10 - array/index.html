@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Array</title>
+  </head>
+  <body>
+    <main>
+      <h1>Array</h1>
+      <p>
+        Array é uma estrutura de dados que permite armazenar e organizar uma
+        coleção de valores, sejam eles números, strings, objetos, funções ou até
+        mesmo outros arrays.
+      </p>
+      <p>
+        Os arrays são usados para trabalhar com conjuntos de dados de forma
+        eficiente. Aqui estão alguns conceitos fundamentais sobre arrays em
+        JavaScript:
+      </p>
+      <h2>Declaração de um Array:</h2>
+      <p>
+        Você pode criar um array em JavaScript de várias maneiras, mas a forma
+        mais comum é usando colchetes [] e separando os valores com vírgulas.
+      </p>
+      <div class="code">let frutas = ["maçã", "banana", "laranja"];</div>
+
+      <h2>Acesso a Elementos:</h2>
+      <p>
+        Os elementos de um array são acessados por meio de um índice, começando
+        em 0 para o primeiro elemento.
+      </p>
+      <div class="code">console.log(frutas[0]); // Saída: "maçã"</div>
+
+      <h2>Comprimento do Array:</h2>
+      <p>
+        Você pode obter o número de elementos em um array usando a propriedade
+        length.
+      </p>
+      <div class="code">console.log(frutas.length); // Saída: 3</div>
+
+      <h2>Adição e Remoção de Elementos:</h2>
+      <p>
+        Você pode adicionar elementos a um array usando o método push() e
+        removê-los usando pop() para o último elemento, ou shift() para o
+        primeiro elemento.
+      </p>
+      <div class="code">
+        frutas.push("uva"); <br />// Adiciona "uva" ao final do array<br /><br />
+        frutas.pop(); <br />// Remove o último elemento ("uva")<br /><br />
+        frutas.shift(); <br />// Remove o primeiro elemento ("maçã")
+      </div>
+
+      <h2>Iteração em um Array:</h2>
+      <p>
+        Você pode percorrer todos os elementos de um array usando loops, como
+        for ou forEach().
+      </p>
+      <div class="code">
+        for (let i = 0; i < frutas.length; i++){<br />console.log(frutas[i]);<br />}<br /><br />
+        frutas.forEach(function(fruta){<br />console.log(fruta);<br />
+        });
+      </div>
+      <h2>Métodos de Array:</h2>
+      <p>
+        JavaScript oferece muitos métodos incorporados para manipular arrays,
+        como map(), filter(), reduce(), slice(), entre outros. Esses métodos
+        tornam a manipulação de arrays mais fácil e eficiente.
+      </p>
+      <div class="code">
+        let numeros = [1, 2, 3, 4, 5];<br />let dobrados =
+        numeros.map(function(numero) { return numero * 2; }); // dobrados agora
+        é [2, 4, 6, 8, 10]
+      </div>
+    </main>
+  </body>
+</html>
