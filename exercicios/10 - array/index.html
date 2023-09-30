@@ -19,27 +19,28 @@
         eficiente. Aqui estão alguns conceitos fundamentais sobre arrays em
         JavaScript:
       </p>
+      <div class="separador"></div>
       <h2>Declaração de um Array:</h2>
       <p>
         Você pode criar um array em JavaScript de várias maneiras, mas a forma
         mais comum é usando colchetes [] e separando os valores com vírgulas.
       </p>
       <div class="code">let frutas = ["maçã", "banana", "laranja"];</div>
-
+      <div class="separador"></div>
       <h2>Acesso a Elementos:</h2>
       <p>
         Os elementos de um array são acessados por meio de um índice, começando
         em 0 para o primeiro elemento.
       </p>
       <div class="code">console.log(frutas[0]); // Saída: "maçã"</div>
-
+      <div class="separador"></div>
       <h2>Comprimento do Array:</h2>
       <p>
         Você pode obter o número de elementos em um array usando a propriedade
         length.
       </p>
       <div class="code">console.log(frutas.length); // Saída: 3</div>
-
+      <div class="separador"></div>
       <h2>Adição e Remoção de Elementos:</h2>
       <p>
         Você pode adicionar elementos a um array usando o método push() e
@@ -51,7 +52,7 @@
         frutas.pop(); <br />// Remove o último elemento ("uva")<br /><br />
         frutas.shift(); <br />// Remove o primeiro elemento ("maçã")
       </div>
-
+      <div class="separador"></div>
       <h2>Iteração em um Array:</h2>
       <p>
         Você pode percorrer todos os elementos de um array usando loops, como
@@ -62,6 +63,7 @@
         frutas.forEach(function(fruta){<br />console.log(fruta);<br />
         });
       </div>
+      <div class="separador"></div>
       <h2>Métodos de Array:</h2>
       <p>
         JavaScript oferece muitos métodos incorporados para manipular arrays,
@@ -70,9 +72,39 @@
       </p>
       <div class="code">
         let numeros = [1, 2, 3, 4, 5];<br />let dobrados =
-        numeros.map(function(numero) { return numero * 2; }); // dobrados agora
-        é [2, 4, 6, 8, 10]
+        numeros.map(function(numero){<br />return numero * 2; });<br />//
+        dobrados agora é [2, 4, 6, 8, 10]
       </div>
+      <div class="separador"></div>
+      <h2>Arrays Multidimensionais:</h2>
+      <p>
+        Você pode criar arrays dentro de arrays, criando assim arrays
+        multidimensionais. Isso é útil para representar dados tabulares ou
+        matrizes.
+      </p>
+      <div class="code">
+        let matriz = [<br />
+        [1, 2, 3],<br />[4, 5, 6],<br />[7, 8, 9] <br /><br />];
+      </div>
+      <div class="separador"></div>
+      <h2>Métodos para Adicionar e Remover Elementos no Início ou Meio:</h2>
+      <p>
+        Além de push() e pop(), você pode usar unshift() para adicionar
+        elementos no início e splice() para adicionar ou remover elementos em
+        posições específicas.
+      </p>
+      <div class="code">
+        frutas.unshift("abacaxi"); <br />// Adiciona "abacaxi" no início<br /><br />
+        frutas.splice(1, 0, "morango"); <br />// Adiciona "morango" na segunda
+        posição
+      </div>
+
+      <p>
+        Os arrays são uma parte fundamental da linguagem JavaScript e são
+        amplamente usados em programação para armazenar, acessar e manipular
+        coleções de dados. Eles oferecem flexibilidade e versatilidade na
+        manipulação de dados em um programa.
+      </p>
     </main>
   </body>
 </html>
